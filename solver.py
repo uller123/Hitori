@@ -4,6 +4,15 @@ from copy import deepcopy
 from typing import List, Tuple, Optional
 from collections import deque
 
+__all__ = [
+    'neighbors_orth',
+    'count_connected_components',
+    'validate_grid',
+    'HitoriSolver',
+    'display_grid'
+]
+
+
 
 def neighbors_orth(H: int, W: int, r: int, c: int):
     for dr, dc in ((-1, 0), (1, 0), (0, -1), (0, 1)):
